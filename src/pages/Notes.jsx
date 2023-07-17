@@ -36,6 +36,9 @@ const Notes = ({notes}) => {
                 }
             </div>
             <Link to="/create-note" className='btn add__btn'><BsPlusLg/></Link>
+            {/* vvv new stuff vvv*/}
+            <Link to="/create-calc-note" className='btn calc__btn'><BsPlusLg/></Link>
+            {/* ^^^new stuff^^^ */}
         </section>
     )
 }
