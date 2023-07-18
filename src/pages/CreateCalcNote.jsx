@@ -31,15 +31,16 @@ const CreateCalcNote = ({setNotes}) => {
       const temp = details;
       const temp2 = temp.replaceAll(/[^0-9,-.\n" "]/g,'');
       const temp3 = temp2.replaceAll(/\n/g, ' ');
-      temp3.replaceAll(/[^0-9" ".]/g,'');
-      console.log(temp3);
+      const temp4 = temp3.replaceAll(',', '');
+      temp4.replaceAll(/[^0-9" ".]/g,'');
+      console.log(temp4);
       
-      const arr = temp3.split(' ');
+      const arr = temp4.split(' ');
       console.log(arr);
 
       arr.forEach(myFunction)
       function myFunction(item) {
-        sum += parseInt(item,10);
+        sum += parseFloat(item);
       }
 
       return sum;
