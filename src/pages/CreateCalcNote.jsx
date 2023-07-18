@@ -25,11 +25,11 @@ const CreateCalcNote = ({setNotes}) => {
       
     }
 
-    const handleChange = event => {
-      const result = event.target.details.replace('a', '');
+    // const handleChange = (details) => {
+    //   const result = details.replaceAll(/[^0-9,.]/g,'');
   
-      setDetails(result);
-    };
+    //   setDetails(result);
+    // };
 
     return (
        <section>
@@ -51,7 +51,7 @@ const CreateCalcNote = ({setNotes}) => {
               rows="20" 
               cols="20" 
               placeholder="be boop be..."
-              value={details.replaceAll(/[^0-9]/g,'')}
+              value={details.replaceAll(/[^0-9,-.\n" "]/g,'')}
             ></textarea>
             {/* <textarea readOnly className="create-calc-note__textarea2" rows="20" cols="20" placeholder="be boop be..." type="text" value={details} onChange={handleChange}></textarea> */}
             </div>
