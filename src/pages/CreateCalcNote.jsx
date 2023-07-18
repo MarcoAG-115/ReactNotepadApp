@@ -10,6 +10,7 @@ const CreateCalcNote = ({setNotes}) => {
     const [details, setDetails] = useState('')
     const date = useCreateDate();
     const navigate = useNavigate();
+    var sum = 0;
 
     const handleSubmit = (e) => {
       e.preventDefault();
@@ -25,11 +26,24 @@ const CreateCalcNote = ({setNotes}) => {
       
     }
 
-    // const handleChange = (details) => {
-    //   const result = details.replaceAll(/[^0-9,.]/g,'');
-  
-    //   setDetails(result);
-    // };
+    const handleSum = () => {
+
+      const temp = details;
+      const temp2 = temp.replaceAll(/[^0-9,-.\n" "]/g,'');
+      const temp3 = temp2.replaceAll(/\n/g, ' ');
+      temp3.replaceAll(/[^0-9" ".]/g,'');
+      console.log(temp3);
+      
+      const arr = temp3.split(' ');
+      console.log(arr);
+
+      arr.forEach(myFunction)
+      function myFunction(item) {
+        sum += parseInt(item,10);
+      }
+
+      return sum;
+    }
 
     return (
        <section>
@@ -54,6 +68,13 @@ const CreateCalcNote = ({setNotes}) => {
               value={details.replaceAll(/[^0-9,-.\n" "]/g,'')}
             ></textarea>
             {/* <textarea readOnly className="create-calc-note__textarea2" rows="20" cols="20" placeholder="be boop be..." type="text" value={details} onChange={handleChange}></textarea> */}
+            </div>
+            <div>
+              <textarea 
+              readOnly
+              className="btn__secondary"
+              value={handleSum()}
+              ></textarea>
             </div>
       
           </form>
