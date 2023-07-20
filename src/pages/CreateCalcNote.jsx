@@ -11,7 +11,7 @@ const CreateCalcNote = ({setNotes}) => {
     const date = useCreateDate();
     const navigate = useNavigate();
     var sum = 0;
-    var display = 0;
+    // var display = 0;
 
     const handleSubmit = (e) => {
       e.preventDefault();
@@ -30,8 +30,9 @@ const CreateCalcNote = ({setNotes}) => {
     //Takes inputs & performs maths in real time on the left side
     const handleCalculation = () => {
       const t = details;
-      const t2 = t.replaceAll(/[^0-9-.+-/*' '\n]/g,'');
-      const t3 = t2.replaceAll(' ', '\n');
+      const t2 = t.replaceAll(/[^0-9-.+-/*^' '\n]/g,'');
+      const t4 = t2.replaceAll('^','**');
+      const t3 = t4.replaceAll(' ', '\n');
 
       var arr1 = t3.split(/\n/g);
       var arr2 = [];
@@ -64,7 +65,7 @@ const CreateCalcNote = ({setNotes}) => {
           t9 = t9 + stuff;
         }
       }
-      
+
       return t9;
     }
 
