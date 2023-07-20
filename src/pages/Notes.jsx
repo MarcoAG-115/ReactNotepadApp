@@ -35,9 +35,9 @@ const Notes = ({notes}) => {
                     filteredNotes.map(note => <NoteItem key={note.id} note= {note}/>)
                 }
             </div>
-            <Link to="/create-note" className='btn add__btn'><BsPlusLg/></Link>
+            <Link to="/create-calc-note" className='btn add__btn'><BsPlusLg/></Link>
             {/* vvv new stuff vvv*/}
-            <Link to="/create-calc-note" className='btn calc__btn'><BsPlusLg/></Link>
+            {/* <Link to="/create-calc-note" className='btn calc__btn'><BsPlusLg/></Link> */}
             {/* ^^^new stuff^^^ */}
         </section>
     )
