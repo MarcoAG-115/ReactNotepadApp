@@ -135,7 +135,7 @@ const EditNote = ({notes, setNotes}) => {
               className="create-calc-note__textarea2" 
               rows="20" 
               cols="20" 
-              placeholder="be boop be..."
+              placeholder=""
               // value={details.replaceAll(/[^0-9,-.\n" "]/g,'')}
               value={handleCalculation()}
             ></textarea>
