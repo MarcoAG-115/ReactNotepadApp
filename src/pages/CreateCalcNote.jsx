@@ -48,15 +48,15 @@ const CreateCalcNote = ({setNotes}) => {
         if(!(obj == '')){
           if(isNaN(obj)){
             try{
-              arr2.push(evil(obj) + "\n");
+              arr2.push(evil(obj.trim()) + "\n");
             }
             catch(err){
-              arr2.push(obj);
+              arr2.push(obj.trim());
             }
             
           }
           else{
-            arr2.push(obj + "\n");
+            arr2.push(obj.trim() + "\n");
           }
         }
       }
@@ -78,26 +78,6 @@ const CreateCalcNote = ({setNotes}) => {
     // Takes input, gets only the numbers, converts them to numbers, & finds sum
     const handleSum = (paramArr) => {
 
-      // const temp = details;
-      // const temp2 = temp.replaceAll(/[^0-9,-.+-/*\n" "]/g,'');
-      // const temp3 = temp2.replaceAll(/\n/g, ' ');
-      // const temp4 = temp3.replaceAll(',', '');
-      // temp4.replaceAll(/[^0-9" ".]/g,'');
-      // console.log(temp4);
-      
-      // const arr = temp4.split(' ');
-      // console.log(arr);
-
-      // arr.forEach(myFunction)
-      // function myFunction(item) {
-      //   if(!(item == '')){
-      //     sum += parseFloat(item);
-      //   }
-        
-      // }
-
-      // return sum;
-
       const t6 = paramArr;
       const arr3 = t6.split('\n');
       arr3.forEach(myFunction)
@@ -106,7 +86,7 @@ const CreateCalcNote = ({setNotes}) => {
           sum += parseFloat(item);
         }
       }
-      return sum;
+      return "Total: " + sum;
     }
 
     return (
