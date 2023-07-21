@@ -48,7 +48,7 @@ body {
 .btn.lg {
     padding: 0.8rem 1.5rem;
     font-size: 1.1rem;
-    font-weight: lighter;
+    /* font-weight: lighter; */
 
     /* box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.4); */
 }
@@ -303,7 +303,7 @@ btn calc__btn {
     resize: none;
     height:100%;
     margin-top: 2rem;
-    width:100%;
+    /* width:50%; */
     background: transparent;
 }
 
@@ -312,7 +312,9 @@ btn calc__btn {
     /* font-size: 1.1rem; */
     color: var(--color-white);
     resize: none;
-    margin-right: 48px;
+    /* margin-right: 5px; */
+    padding-right: 18px;
+    width:150%;
 }
 
 .create-calc-note__textarea2 {
@@ -323,7 +325,10 @@ btn calc__btn {
     color:#bae8e89e;
     resize: none;
     text-align: right;
-    margin-left: -30px;
+    /* margin-left: 0px; */
+    
+    width:50%;
+    float:right;
 }
 
 .create-calc-note__form input {
