@@ -312,9 +312,9 @@ btn calc__btn {
     /* font-size: 1.1rem; */
     color: var(--color-white);
     resize: none;
-    /* margin-right: 5px; */
+    /* margin-right: 4px; */
     padding-right: 18px;
-    width:150%;
+    width:125%;
 }
 
 .create-calc-note__textarea2 {
@@ -325,9 +325,9 @@ btn calc__btn {
     color:#bae8e89e;
     resize: none;
     text-align: right;
-    /* margin-left: 0px; */
+    margin-left: -50px;
     
-    width:50%;
+    width:65%;
     float:right;
 }
 

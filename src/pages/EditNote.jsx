@@ -3,6 +3,9 @@ import {IoIosArrowBack} from 'react-icons/io'
 import {RiDeleteBin6Line} from 'react-icons/ri'
 import { useState } from 'react';
 import useCreateDate from './../components/useCreateDate';
+import Modal from "react-modal";
+
+
 
 const EditNote = ({notes, setNotes}) => {
     const {id} = useParams();
@@ -12,6 +15,7 @@ const EditNote = ({notes, setNotes}) => {
     const date = useCreateDate();
     const navigate = useNavigate();
     var sum = 0;
+   
 
     const handleForm = (e) => {
       e.preventDefault();
