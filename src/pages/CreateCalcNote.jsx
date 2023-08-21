@@ -30,14 +30,14 @@ const CreateCalcNote = ({setNotes}) => {
     //Takes inputs & performs maths in real time on the left side
     const handleCalculation = () => {
       const t = details;
-      const t2 = t.replaceAll(/[^0-9-.+'plus''minus''times''divided by''mod'/*^' '\n]/g,'');
+      const t2 = t.replaceAll(/[^0-9-.+'plus''minus''times''divided by''mod'/*^' '()\n]/g,'');
       const t4 = t2.replaceAll('^','**');
       const t12 = t4.replaceAll('plus','+');
       const t13 = t12.replaceAll('minus','-');
       const t14 = t13.replaceAll('times','*');
       const t15 = t14.replaceAll('divided by','/');
       const t16 = t15.replaceAll('mod','%');
-      const t17 = t16.replaceAll(/[^0-9-.+/%*^' '\n]/g,'');
+      const t17 = t16.replaceAll(/[^0-9-.+/%*^' '()\n]/g,'');
       const t3 = t17.replaceAll(' ', '\n');
 
       var arr1 = t3.split('\n');
@@ -86,7 +86,7 @@ const CreateCalcNote = ({setNotes}) => {
           sum += parseFloat(item);
         }
       }
-      return "Total: " + sum;
+      return "Total: " + sum.toFixed(2);
     }
 
     return (
