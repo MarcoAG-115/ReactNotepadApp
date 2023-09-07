@@ -4,11 +4,50 @@
 
 ## Description
 
-A Native React application that has been primarily developed to work on mobile devices, specifically the latest iPhone models (12,13, & 14). The Notepad app takes the framework of a basic note app and adds calculator functionality. Aside from creating, searching, & editing notes, users can type out numeric equations to see the results. The calculator functionality is limited to mostly arithmitic operations (/, *, +, -, %, ^). The application will follow the standard order of operations (PEMDAS). Additionally, the app will keep track of a total sum at the bottom of each note. This sum is calculated by using all the numbers displayed on the right side of the notepad text area. The app can be downloaded as an iPhone app if it is ran through Xcode, but it can also work as a web app.
+A Native React application that has been primarily developed to work on mobile devices, specifically the latest iPhone models (12,13, & 14). The Notepad app takes the framework of a basic note app and adds calculator functionality. Aside from creating, searching, & editing notes, users can type out numeric equations to see the results. The calculator functionality is limited to mostly arithmitic operations (/, *, +, -, %, ^).
+The following characters & phrases can be used:
+Addition
+```bash
+5+5
+5 plus 5
+```
+Subtraction
+```bash
+4-1
+4 minus 1
+```
+Multiplication
+```bash
+4*4
+4 times 4
+```
+Division
+```bash
+10/2
+10 divided by 2
+```
+Exponential
+```bash
+2^3
+```
+Remainder / mod
+```bash
+6 mod 3
+```
+ The application will follow the standard order of operations (PEMDAS). Additionally, the app will keep track of a total sum at the bottom of each note. This sum is calculated by using all the numbers displayed on the right side of the notepad text area. The app can be downloaded as an iPhone app if it is ran through Xcode, but it can also work as a web app.
 
 ## Frameworks
 
 The foundation of this application is mainly sourced by bootstrapping Create React App (Native React). Some of the original code for the note functionality is sourced from a tutorial (https://www.youtube.com/watch?v=_3ooazcK4TI). Otherwise, the UI/UX design and the majority of the functionality are proprietary.
+
+## Authors
+* **Marco Gonzalez** - *Initial work* - [MarcoAG-115](https://github.com/MarcoAG-115)
+
+## License
+
+## Acknowledgements
+* [Tutorial for basic notes app](https://www.youtube.com/watch?v=_3ooazcK4TI)
+* Inspired by [Numi](https://numi.app/) for Mac
 
 
 # Getting Started with Create React App
