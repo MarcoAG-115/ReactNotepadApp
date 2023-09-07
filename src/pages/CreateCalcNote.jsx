@@ -38,7 +38,7 @@ const CreateCalcNote = ({setNotes}) => {
       const t15 = t14.replaceAll('divided by','/');
       const t16 = t15.replaceAll('mod','%');
       const t17 = t16.replaceAll(/[^0-9-.+/%*^' '()\n]/g,'');
-      const t3 = t17.replaceAll(' ', '\n');
+      const t3 = t17.replaceAll(' ', '\t');
 
       var arr1 = t3.split('\n');
       var arr2 = [];
@@ -58,6 +58,9 @@ const CreateCalcNote = ({setNotes}) => {
           else{
             arr2.push(obj.trim() + "\n");
           }
+        }
+        else{
+          arr2.push("\n");
         }
       }
       function evil(fn){

@@ -60,6 +60,7 @@ const EditNote = ({notes, setNotes}) => {
       const t3 = t17.replaceAll(' ', '\t');
 
       var arr1 = t3.split('\n');
+      console.log(arr1);
       var arr2 = [];
 
       arr1.forEach(searchFunc);
@@ -77,6 +78,9 @@ const EditNote = ({notes, setNotes}) => {
           else{
             arr2.push(obj.trim() + "\n");
           }
+        }
+        else{
+          arr2.push("\n");
         }
       }
       function evil(fn){
