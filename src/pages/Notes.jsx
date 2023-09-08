@@ -25,7 +25,7 @@ const Notes = ({notes}) => {
     return (
         <section>
             <header className="notes__header">
-                {!showSearch && <h2>My Notes</h2>}
+                {!showSearch && <h2>GeekPad</h2>}
                 {showSearch && <input type="text" value={text} onChange={(e) => {setText(e.target.value); handleSearch();}} autoFocus placeholder='Keyword...' />}
                 <button className='btn' onClick={() => setShowSearch(prevState => !prevState)}>{showSearch ? <MdClose/> : <BiSearch/>}</button>
             </header>
@@ -35,9 +35,9 @@ const Notes = ({notes}) => {
                     filteredNotes.map(note => <NoteItem key={note.id} note= {note}/>)
                 }
             </div>
-            <Link to="/create-note" className='btn add__btn'><BsPlusLg/></Link>
+            <Link to="/create-calc-note" className='btn add__btn'><BsPlusLg/></Link>
             {/* vvv new stuff vvv*/}
-            <Link to="/create-calc-note" className='btn calc__btn'><BsPlusLg/></Link>
+            {/* <Link to="/create-calc-note" className='btn calc__btn'><BsPlusLg/></Link> */}
             {/* ^^^new stuff^^^ */}
         </section>
     )
