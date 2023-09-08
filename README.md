@@ -2,6 +2,9 @@
 
 ## Preview
 
+The following video provides a brief preview of the applications complete functionality.
+https://github.com/MarcoAG-115/ReactNotepadApp/assets/57389247/3aa79206-836c-40bb-8eca-38f81501f88e
+
 ## Description
 
 A Native React application that has been primarily developed to work on mobile devices, specifically the latest iPhone models (12,13, & 14). The Notepad app takes the framework of a basic note app and adds calculator functionality. Aside from creating, searching, & editing notes, users can type out numeric equations to see the results. The calculator functionality is limited to mostly arithmitic operations (/, *, +, -, %, ^).
