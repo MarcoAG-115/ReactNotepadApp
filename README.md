@@ -3,7 +3,9 @@
 ## Preview
 
 The following video provides a brief preview of the applications complete functionality.
-https://github.com/MarcoAG-115/ReactNotepadApp/assets/57389247/3aa79206-836c-40bb-8eca-38f81501f88e
+[ReactNotesApp-Preview](https://github.com/MarcoAG-115/ReactNotepadApp/assets/57389247/12b5cc9c-a175-466b-8ed2-c799bd22509d)
+
+
 
 ## Description
 
