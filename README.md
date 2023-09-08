@@ -111,10 +111,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Authors
 * **Marco Gonzalez** - *Initial work* - [MarcoAG-115](https://github.com/MarcoAG-115)
 
-## License
-
-This project is licensed under the MIT License - see the LICENSE.txt file for details
-
 ## Acknowledgements
+
 * [Tutorial for basic notes app](https://www.youtube.com/watch?v=_3ooazcK4TI)
 * Inspired by [Numi](https://numi.app/) for Mac
